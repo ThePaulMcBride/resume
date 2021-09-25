@@ -93,7 +93,7 @@ const data = {
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 py-12 print:py-0">
+    <div className="bg-gray-100 md:py-12 print:py-0">
       <Head>
         <title>{data.name} Resumé</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
@@ -112,7 +112,7 @@ export default function Home() {
       <main className="container mx-auto bg-white relative max-w-6xl">
         <div>
           <div>
-            <div className="px-24 mx-20 py-20">
+            <div className="px-4 mx-6 py-6 md:px-24 md:mx-20 md:py-20">
               <header>
                 <h1 className="text-3xl uppercase font-bold mb-4 text-gray-700">
                   {data.name}
@@ -140,7 +140,7 @@ export default function Home() {
                 <div className="text-gray-500 mb-2">{data.summary}</div>
 
                 <div>
-                  <div className="leading-tight bg-green-400 text-green-700 inline-flex flex-col justify-center items-center rounded-full w-16 h-16 p-2 absolute left-20 top-20 text-lg font-bold">
+                  <div className="hidden leading-tight bg-green-400 text-green-700 md:inline-flex flex-col justify-center items-center rounded-full w-16 h-16 p-2 absolute left-20 top-20 text-lg font-bold">
                     <div>P</div>
                     <div>M</div>
                   </div>
@@ -211,11 +211,11 @@ export default function Home() {
                     <h2 className="text-gray-400 uppercase tracking-wider text-xs mb-6">
                       Technologies
                     </h2>
-                    <ul className="flex">
+                    <ul className="flex flex-wrap">
                       {data.technologies.map((tech) => (
                         <li
                           key={tech}
-                          className="bg-gray-100 text-gray-600 mx-1 px-2 py-1"
+                          className="bg-gray-100 text-gray-600 mx-1 mb-2 px-2 py-1"
                         >
                           {tech}
                         </li>
