@@ -12,7 +12,7 @@ const data = {
       role: "Lead Developer",
       dates: "2018 - Present",
       highlights: [
-        "Managed a team of developers and fostered a culture of continius integration",
+        "Managed a team of developers and fostered a culture of continuous integration",
         "Reduced initial bundle size by 80% and initial page load times by several seconds",
         "Migrated a legacy app from Backbone to React and Next.js",
         "Maintained and extended a complex app split across multiple services",
