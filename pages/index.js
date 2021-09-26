@@ -112,13 +112,13 @@ export default function Home() {
       <main className="container mx-auto bg-white relative max-w-6xl">
         <div>
           <div>
-            <div className="px-4 mx-6 py-6 md:px-24 md:mx-20 md:py-20">
+            <div className="px-4 mx-6 py-6 md:px-24 md:mx-20 md:py-20 print:px-20 print:mx-16 print:py-20">
               <header>
                 <h1 className="text-3xl uppercase font-bold mb-4 text-gray-700">
                   {data.name}
                 </h1>
                 <div className="text-gray-700 mb-2">{data.job_title}</div>
-                <div className="text-gray-500 mb-2">
+                <div className="text-gray-500 mb-2 flex">
                   Belfast, Northern Ireland
                   <span> | </span>
                   <a
@@ -140,7 +140,7 @@ export default function Home() {
                 <div className="text-gray-500 mb-2">{data.summary}</div>
 
                 <div>
-                  <div className="hidden leading-tight bg-green-400 text-green-700 md:inline-flex flex-col justify-center items-center rounded-full w-16 h-16 p-2 absolute left-20 top-20 text-lg font-bold">
+                  <div className="hidden leading-tight bg-green-400 text-green-700 md:inline-flex print:inline-flex flex-col justify-center items-center rounded-full w-16 h-16 p-2 absolute left-20 top-20 print:left-12 text-lg font-bold">
                     <div>P</div>
                     <div>M</div>
                   </div>
@@ -154,7 +154,7 @@ export default function Home() {
                       Employment History
                     </h2>
                     {data.employment_history.map((job) => (
-                      <div key={job.url}>
+                      <div key={job.url} className="job">
                         <h2 className="uppercase font-bold text-lg text-gray-700 tracking-wider">
                           <a
                             href={job.url}
@@ -185,7 +185,7 @@ export default function Home() {
                       Relevant Experience
                     </h2>
                     {data.relevant_experience.map((job) => (
-                      <div key={job.url}>
+                      <div key={job.url} className="job">
                         <h2 className="uppercase font-bold text-lg text-gray-700 tracking-wider">
                           <a
                             href={job.url}

@@ -2,7 +2,7 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
-section,
+.job,
 p {
   page-break-inside: avoid;
 }
@@ -11,6 +11,7 @@ p {
   size: A4;
   margin: 5mm;
   margin-top: 20mm;
+  margin-bottom: 20mm;
 }
 
 @page :first {
